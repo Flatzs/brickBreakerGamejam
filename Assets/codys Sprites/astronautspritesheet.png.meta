@@ -1,0 +1,246 @@
+fileFormatVersion: 2
+guid: b8a16056101bee340bafff5f56fe4f44
+timeCreated: 1458880162
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: astronautspritesheet_0
+    21300002: astronautspritesheet_1
+    21300004: astronautspritesheet_2
+    21300006: astronautspritesheet_3
+    21300008: astronautspritesheet_4
+    21300010: astronautspritesheet_5
+    21300012: astronautspritesheet_6
+    21300014: astronautspritesheet_7
+    21300016: astronautspritesheet_8
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 10
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: astronautspritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 46
+        width: 201
+        height: 330
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.666668, y: 1.1110992}
+        - {x: -44.666668, y: -71.8889}
+        - {x: -44.666668, y: -133.8889}
+        - {x: -17.666668, y: -146.8889}
+        - {x: 45.333332, y: -146.8889}
+        - {x: 45.333332, y: 1.1110992}
+    - name: astronautspritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 40
+        width: 141
+        height: 329
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32.666656, y: 1.1666565}
+        - {x: -20.333344, y: 1.1666565}
+        - {x: -31.333344, y: -70.83334}
+        - {x: -31.333344, y: -127.83334}
+        - {x: -6.3333435, y: -143.83334}
+        - {x: -3.3333435, y: -145.83334}
+        - {x: 21.666656, y: -145.83334}
+        - {x: 24.666656, y: -135.83334}
+        - {x: 30.666656, y: -99.83334}
+        - {x: 32.666656, y: -63.833344}
+    - name: astronautspritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 39
+        width: 146
+        height: 328
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15.444458, y: 0.94444275}
+        - {x: -32.444458, y: -103.05556}
+        - {x: -32.444458, y: -138.05556}
+        - {x: -25.444458, y: -146.05556}
+        - {x: -2.444458, y: -146.05556}
+        - {x: 33.555542, y: -121.05556}
+        - {x: 33.555542, y: 0.94444275}
+    - name: astronautspritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 48
+        width: 205
+        height: 328
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 44.333313, y: -116.05556}
+        - {x: 37.333313, y: -10.055557}
+        - {x: 26.333313, y: 0.94444275}
+        - {x: -17.666687, y: 0.94444275}
+        - {x: -27.666687, y: -4.0555573}
+        - {x: -45.666687, y: -103.05556}
+        - {x: -45.666687, y: -137.05556}
+        - {x: -36.666687, y: -146.05556}
+        - {x: -12.666687, y: -146.05556}
+        - {x: 29.333313, y: -142.05556}
+        - {x: 46.333313, y: -130.05556}
+        - {x: 46.333313, y: -119.05556}
+    - name: astronautspritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 2166
+        y: 91
+        width: 247
+        height: 290
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -54.833313, y: -88}
+        - {x: -54.833313, y: -118}
+        - {x: -32.833313, y: -129}
+        - {x: 56.166687, y: -129}
+        - {x: 56.166687, y: -55}
+        - {x: 38.166687, y: 1}
+        - {x: -13.833313, y: 1}
+        - {x: -22.833313, y: -4}
+        - {x: -21.833313, y: -43}
+    - name: astronautspritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 2692
+        y: 49
+        width: 205
+        height: 323
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 46.444458, y: -25.5}
+        - {x: 36.444458, y: 1.5}
+        - {x: -19.555542, y: 1.5}
+        - {x: -25.555542, y: -7.5}
+        - {x: -45.555542, y: -63.5}
+        - {x: -45.555542, y: -135.5}
+        - {x: -44.555542, y: -136.5}
+        - {x: -39.555542, y: -134.5}
+        - {x: 9.444458, y: -143.5}
+        - {x: 34.444458, y: -143.5}
+        - {x: 40.444458, y: -139.5}
+        - {x: 46.444458, y: -134.5}
+    - name: astronautspritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 3232
+        y: 42
+        width: 144
+        height: 329
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8.055542, y: 1.0555573}
+        - {x: -32.055542, y: -18.944443}
+        - {x: -32.055542, y: -145.94444}
+        - {x: 26.944458, y: -145.94444}
+        - {x: 32.944458, y: -113.94444}
+        - {x: 32.944458, y: 1.0555573}
+    - name: astronautspritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 3738
+        y: 39
+        width: 147
+        height: 333
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.666626, y: 0.83332825}
+        - {x: -23.666626, y: -13.166672}
+        - {x: -32.666626, y: -77.16667}
+        - {x: -32.666626, y: -144.16667}
+        - {x: -31.666626, y: -147.16667}
+        - {x: -28.666626, y: -148.16667}
+        - {x: 2.333374, y: -148.16667}
+        - {x: 31.333374, y: -110.16667}
+        - {x: 33.333374, y: -66.16667}
+        - {x: 33.333374, y: 0.83332825}
+    - name: astronautspritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 4231
+        y: 51
+        width: 212
+        height: 321
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32.055542, y: 1.3333282}
+        - {x: -47.055542, y: -52.66667}
+        - {x: -47.055542, y: -140.66667}
+        - {x: -45.055542, y: -142.66667}
+        - {x: 20.944458, y: -142.66667}
+        - {x: 30.944458, y: -140.66667}
+        - {x: 47.944458, y: -136.66667}
+        - {x: 47.944458, y: -52.66667}
+        - {x: 32.944458, y: 1.3333282}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
