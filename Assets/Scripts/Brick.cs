@@ -37,12 +37,12 @@ public class Brick : MonoBehaviour {
     //if you do not use this ienumerator the ball will sometimes go right through the brick without bouncing off.
     IEnumerator DestroyBrick()
     {
-		//yield return new WaitForSeconds(destroyDelay);
-		yield return null;
-		bc2d.enabled = false;
+		yield return new WaitForSeconds(destroyDelay);
+		//yield return null;
+		//bc2d.enabled = false;
 
         //this destroys the brick
 
-        //Destroy(gameObject);
+        Destroy(gameObject);
     }
 }

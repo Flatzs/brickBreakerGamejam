@@ -19,10 +19,15 @@ public class Ball : MonoBehaviour {
 	private Vector3 dir;
 
     
-    void Start()
+	void Start(){
+
+		rb2d = GetComponent<Rigidbody2D> ();
+	}
+
+    void startGame()
     {
 
-		rb2d = GetComponent<Rigidbody2D>();
+
         // Get the ball's rigid body
         rb2d.velocity = Vector2.up * ballSpeed;
 
@@ -40,27 +45,29 @@ public class Ball : MonoBehaviour {
    void OnCollisionEnter2D(Collision2D collision)
     {
         
-        if (collision.gameObject.name == "Paddle")
-        {
-            // Calculate the angle.
-            float x = ballAngle(transform.position, collision.transform.position, collision.collider.bounds.size.x);
+		if (collision.gameObject.name == "Paddle") {
+			// Calculate the angle.
+			float x = ballAngle (transform.position, collision.transform.position, collision.collider.bounds.size.x);
 
-            // Normalize that shit.
-            dir = new Vector2(x, 1).normalized;
+			// Normalize that shit.
+			dir = new Vector2 (x, 1).normalized;
 
-            // Calculate Velocity.
-            rb2d.velocity = dir * ballSpeed;
-
+			// Calculate Velocity.
+			rb2d.velocity = dir * ballSpeed;
 
 
 
-			//if (ballSpeed < maxBallSpeed)
-			//	ballSpeed += 10f;
-        }
+
+			if (ballSpeed < maxBallSpeed)
+				ballSpeed += 10f;
+		} else if (collision.gameObject.name == "borderBottom" || collision.gameObject.name == "playerGuy") {
+			GameObject.Find ("gameController").SendMessage ("EndGame");
+			Destroy (this.gameObject);
+		}
     }
 
 	void Update(){
-		Debug.Log(rb2d.velocity);
+		//Debug.Log(rb2d.velocity);
 		rb2d.velocity = Vector3.ClampMagnitude(rb2d.velocity , maxVelocity);
 	}
 
