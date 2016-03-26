@@ -34,7 +34,7 @@ public class Paddle : MonoBehaviour {
 		if (Input.GetKey(KeyCode.LeftShift)){
 			speed = sprintingSpeed;
 		}
-		else{
+		else{	
 			speed = runningSpeed;
 		}
 
@@ -66,7 +66,10 @@ public class Paddle : MonoBehaviour {
 			slideForward = transform.right;
 
 			if (facingLeft){
-				guyAnim.transform.Rotate(new Vector3(0f,180f,0f));
+				guyAnim.transform.localScale = new Vector3(-guyAnim.transform.localScale.x,
+				                                           guyAnim.transform.localScale.y,
+				                                           guyAnim.transform.localScale.z);
+				//guyAnim.transform.Rotate(new Vector3(0f,180f,0f));
 				facingLeft = false;
 
 
@@ -78,7 +81,9 @@ public class Paddle : MonoBehaviour {
 			slideForward = transform.right * -1;
 
 			if (!facingLeft){
-				guyAnim.transform.Rotate(new Vector3(0f,180f,0f));
+				guyAnim.transform.localScale = new Vector3(-guyAnim.transform.localScale.x,
+				                                           guyAnim.transform.localScale.y,
+				                                           guyAnim.transform.localScale.z);
 				facingLeft = true;
 
 			}

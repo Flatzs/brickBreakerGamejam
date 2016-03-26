@@ -13,14 +13,20 @@ public class Ball : MonoBehaviour {
 
     // ball movement speed
     public float ballSpeed = 100.0f;
+	public float maxBallSpeed = 300f;
+	public float maxVelocity = 1f;
+	private Rigidbody2D rb2d ;
+	private Vector3 dir;
 
     
     void Start()
     {
-        // Get the ball's rigid body
-        GetComponent<Rigidbody2D>().velocity = Vector2.up * ballSpeed;
 
-		GetComponent<Rigidbody2D>().AddTorque(0.5f);
+		rb2d = GetComponent<Rigidbody2D>();
+        // Get the ball's rigid body
+        rb2d.velocity = Vector2.up * ballSpeed;
+
+		rb2d.AddTorque(0.5f);
     }
 
     
@@ -40,12 +46,23 @@ public class Ball : MonoBehaviour {
             float x = ballAngle(transform.position, collision.transform.position, collision.collider.bounds.size.x);
 
             // Normalize that shit.
-            Vector2 dir = new Vector2(x, 1).normalized;
+            dir = new Vector2(x, 1).normalized;
 
             // Calculate Velocity.
-            GetComponent<Rigidbody2D>().velocity = dir * ballSpeed;
+            rb2d.velocity = dir * ballSpeed;
+
+
+
+
+			//if (ballSpeed < maxBallSpeed)
+			//	ballSpeed += 10f;
         }
     }
+
+	void Update(){
+		Debug.Log(rb2d.velocity);
+		rb2d.velocity = Vector3.ClampMagnitude(rb2d.velocity , maxVelocity);
+	}
 
     
 }
