@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class gameController : MonoBehaviour {
 
@@ -8,6 +9,10 @@ public class gameController : MonoBehaviour {
 	public GameObject gameOverText;
 	public GameObject startGameText;
 	public GameObject player;
+	public GameObject scoreText;
+	public GameObject endGameScoreText;
+
+	private int score= 0;
 
 	// Use this for initialization
 	void Start () {
@@ -27,6 +32,7 @@ public class gameController : MonoBehaviour {
 		restartButton.SetActive (true);
 		shadeLayer.SetActive (true);
 		gameOverText.SetActive (true);
+		endGameScoreText.GetComponent<TextMesh> ().text = "You harvested " + score + " spood!";
 
 	}
 
@@ -39,5 +45,10 @@ public class gameController : MonoBehaviour {
 		shadeLayer.SetActive (false);
 
 
+	}
+
+	void addScore(){
+		score++;
+		scoreText.GetComponent<TextMesh> ().text = score.ToString ();
 	}
 }

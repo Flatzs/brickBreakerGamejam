@@ -6,10 +6,14 @@ public class Paddle : MonoBehaviour {
 
     //this is the movement speed of the paddle
 
+
+
     public float runningSpeed = 150;
 	public float sprintingSpeed = 300;
 	private float speed = 150;
 	public Animator guyAnim;
+	public Transform isGround;
+	public Transform ground;
 
     //this creates a reference to the rigidbody on the paddle
     public Rigidbody2D rb2d;
@@ -26,6 +30,8 @@ public class Paddle : MonoBehaviour {
 
 	private bool isDead = false;
 	private bool isGameStarted = false;
+
+
 
 	void Start(){
 		rb2d = this.GetComponent<Rigidbody2D>();
@@ -45,10 +51,13 @@ public class Paddle : MonoBehaviour {
 			}
 
 			// jump
-//		if (Input.GetKeyDown(KeyCode.Space)){
-//			Debug.Log("jump");
-//			rb2d.AddForce(Vector2.up * 20000);
-//		}
+		if (Input.GetKeyDown(KeyCode.Space)){
+
+				if (isGround.position.y <= ground.position.y + 1) {
+					Debug.Log ("jump");
+					rb2d.AddForce (Vector2.up * 20000);	
+				}
+			}
 
 
 

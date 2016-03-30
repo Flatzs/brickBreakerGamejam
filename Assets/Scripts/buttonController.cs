@@ -21,6 +21,8 @@ public class buttonController : MonoBehaviour {
 		} else if (this.gameObject.name == "start_button") {
 			GameObject.Find ("gameController").SendMessage ("startGame");
 			this.gameObject.SetActive (false);
+		} else if (this.gameObject.name == "exit_button") {
+			Application.Quit ();
 		}
 
 	}
